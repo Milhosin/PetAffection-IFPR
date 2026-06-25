@@ -1,0 +1,6 @@
+{
+  "name": "PetAffection",
+  "description": "Aplicativo para cadastro de cuidadores de pet que precisam localizar pets para cuidar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
