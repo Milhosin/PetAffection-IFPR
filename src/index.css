@@ -111,36 +111,98 @@
 }
 
 /* Text Colors */
+.dark-emerald .text-slate-950,
 .dark-emerald .text-slate-900,
+.dark-emerald .text-slate-850,
 .dark-emerald .text-slate-800,
 .dark-emerald .text-zinc-950,
 .dark-emerald .text-zinc-900,
-.dark-emerald .text-zinc-800,
 .dark-emerald .text-zinc-850,
+.dark-emerald .text-zinc-800,
 .dark-emerald .text-zinc-805,
-.dark-emerald .text-black,
-.dark-emerald .text-neutral-900,
+.dark-emerald .text-gray-950,
+.dark-emerald .text-gray-900,
+.dark-emerald .text-gray-850,
+.dark-emerald .text-gray-800,
 .dark-emerald .text-neutral-950,
-.dark-emerald .text-[#064e3b],
+.dark-emerald .text-neutral-900,
+.dark-emerald .text-neutral-850,
+.dark-emerald .text-neutral-800,
+.dark-emerald .text-stone-950,
+.dark-emerald .text-stone-900,
+.dark-emerald .text-stone-850,
+.dark-emerald .text-stone-800,
 .dark-emerald .text-emerald-950,
-.dark-emerald .text-emerald-900 {
+.dark-emerald .text-emerald-900,
+.dark-emerald .text-emerald-850,
+.dark-emerald .text-green-950,
+.dark-emerald .text-green-900,
+.dark-emerald .text-green-850,
+.dark-emerald .text-black,
+.dark-emerald .text-[#064e3b] {
   color: #ffffff !important;
 }
 
+.dark-emerald .text-slate-700,
+.dark-emerald .text-slate-600,
 .dark-emerald .text-zinc-700,
 .dark-emerald .text-zinc-600,
 .dark-emerald .text-zinc-650,
+.dark-emerald .text-gray-700,
+.dark-emerald .text-gray-600,
+.dark-emerald .text-gray-650,
+.dark-emerald .text-neutral-700,
+.dark-emerald .text-neutral-600,
+.dark-emerald .text-neutral-650,
+.dark-emerald .text-stone-700,
+.dark-emerald .text-stone-600,
 .dark-emerald .text-emerald-800,
-.dark-emerald .text-emerald-850 {
+.dark-emerald .text-green-800 {
   color: #a7f3d0 !important;
 }
 
+.dark-emerald .text-slate-500,
+.dark-emerald .text-slate-400,
 .dark-emerald .text-zinc-500,
 .dark-emerald .text-zinc-400,
 .dark-emerald .text-zinc-450,
+.dark-emerald .text-gray-500,
+.dark-emerald .text-gray-400,
+.dark-emerald .text-neutral-500,
+.dark-emerald .text-neutral-400,
+.dark-emerald .text-stone-500,
+.dark-emerald .text-stone-400,
 .dark-emerald .text-emerald-700,
-.dark-emerald .text-emerald-700\/80 {
+.dark-emerald .text-emerald-700\/80,
+.dark-emerald .text-green-700 {
   color: #34d399 !important;
+}
+
+/* Amber/Orange alert or badge text mappings for readability in dark mode */
+.dark-emerald .text-amber-950,
+.dark-emerald .text-amber-900,
+.dark-emerald .text-amber-800,
+.dark-emerald .text-amber-700 {
+  color: #fde047 !important;
+}
+
+.dark-emerald .text-orange-950,
+.dark-emerald .text-orange-900,
+.dark-emerald .text-orange-800,
+.dark-emerald .text-orange-700 {
+  color: #fed7aa !important;
+}
+
+/* Red/Rose error/destructive text mappings for readability in dark mode */
+.dark-emerald .text-red-950,
+.dark-emerald .text-red-900,
+.dark-emerald .text-red-800,
+.dark-emerald .text-red-700,
+.dark-emerald .text-rose-950,
+.dark-emerald .text-rose-900,
+.dark-emerald .text-rose-800,
+.dark-emerald .text-rose-700 {
+  color: #fca5a5 !important;
 }
 
 /* Hover effects */
