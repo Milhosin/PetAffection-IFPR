@@ -41,3 +41,136 @@
 .animate-dark-wave {
   animation: darkWaveRise 14s infinite ease-in-out;
 }
+
+/* Dark Emerald Mode Overrides */
+.dark-emerald {
+  color-scheme: dark;
+}
+
+/* Base text and background overrides */
+.dark-emerald,
+.dark-emerald .bg-slate-50 {
+  background-color: #030d08 !important;
+  color: #ffffff !important;
+}
+
+.dark-emerald .bg-white {
+  background-color: #061810 !important;
+}
+
+.dark-emerald .bg-white\/95 {
+  background-color: rgba(6, 24, 16, 0.95) !important;
+}
+
+.dark-emerald .bg-zinc-50 {
+  background-color: #0a2519 !important;
+}
+
+.dark-emerald .bg-zinc-100 {
+  background-color: #0c2e1f !important;
+}
+
+.dark-emerald .bg-zinc-50\/40 {
+  background-color: rgba(10, 37, 25, 0.4) !important;
+}
+
+.dark-emerald .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+}
+
+.dark-emerald .bg-emerald-50\/40 {
+  background-color: rgba(16, 185, 129, 0.05) !important;
+}
+
+.dark-emerald .bg-emerald-100 {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+.dark-emerald .bg-emerald-50\/80 {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+.dark-emerald .bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+}
+
+.dark-emerald .bg-amber-100 {
+  background-color: rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Borders */
+.dark-emerald .border-zinc-200,
+.dark-emerald .border-zinc-150,
+.dark-emerald .border-zinc-100,
+.dark-emerald .border-emerald-200,
+.dark-emerald .border-emerald-200\/60,
+.dark-emerald .border-emerald-100,
+.dark-emerald .border-emerald-150,
+.dark-emerald .border-emerald-300\/20 {
+  border-color: #0d3a25 !important;
+}
+
+/* Text Colors */
+.dark-emerald .text-slate-900,
+.dark-emerald .text-slate-800,
+.dark-emerald .text-zinc-950,
+.dark-emerald .text-zinc-900,
+.dark-emerald .text-zinc-800,
+.dark-emerald .text-zinc-850,
+.dark-emerald .text-zinc-805,
+.dark-emerald .text-black,
+.dark-emerald .text-neutral-900,
+.dark-emerald .text-neutral-950,
+.dark-emerald .text-[#064e3b],
+.dark-emerald .text-emerald-950,
+.dark-emerald .text-emerald-900 {
+  color: #ffffff !important;
+}
+
+.dark-emerald .text-zinc-700,
+.dark-emerald .text-zinc-600,
+.dark-emerald .text-zinc-650,
+.dark-emerald .text-emerald-800,
+.dark-emerald .text-emerald-850 {
+  color: #a7f3d0 !important;
+}
+
+.dark-emerald .text-zinc-500,
+.dark-emerald .text-zinc-400,
+.dark-emerald .text-zinc-450,
+.dark-emerald .text-emerald-700,
+.dark-emerald .text-emerald-700\/80 {
+  color: #34d399 !important;
+}
+
+/* Hover effects */
+.dark-emerald .hover\:bg-zinc-50:hover,
+.dark-emerald .hover\:bg-zinc-100:hover,
+.dark-emerald .hover\:bg-zinc-55:hover {
+  background-color: #0b3421 !important;
+}
+
+.dark-emerald .hover\:text-zinc-950:hover,
+.dark-emerald .hover\:text-zinc-650:hover,
+.dark-emerald .hover\:text-emerald-950:hover {
+  color: #ffffff !important;
+}
+
+/* Input fields specifically */
+.dark-emerald input,
+.dark-emerald textarea,
+.dark-emerald select {
+  background-color: #0a2519 !important;
+  color: #ffffff !important;
+  border-color: #0d3a25 !important;
+}
+
+.dark-emerald input::placeholder,
+.dark-emerald textarea::placeholder {
+  color: rgba(167, 243, 208, 0.4) !important;
+}
+
+/* Dialogs/Modals and inner elements */
+.dark-emerald .bg-white\/80 {
+  background-color: rgba(6, 24, 16, 0.8) !important;
+}

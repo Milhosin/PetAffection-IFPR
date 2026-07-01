@@ -128,6 +128,7 @@ export default function App() {
   const postFileInputRef = React.useRef<HTMLInputElement>(null);
   const [currentView, setCurrentView] = useState<ViewState>("welcome");
   const [showLoginModal, setShowLoginModal] = useState<boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [isPending, startTransition] = useTransition();
 
   // Signup form roles & steps
@@ -474,13 +475,13 @@ export default function App() {
 
   // Menta Vibrante theme values
   const theme = {
-    bgGradient: "from-[#ecfdf5] via-[#f0fbf5] to-[#d1fae5]",
-    cardBg: "bg-white/95 backdrop-blur-md",
-    cardBorder: "border-emerald-200/60",
-    textColor: "text-[#064e3b]",
-    textColorMuted: "text-emerald-700/80",
+    bgGradient: isDarkMode ? "from-[#030d08] via-[#05170f] to-[#020b06]" : "from-[#ecfdf5] via-[#f0fbf5] to-[#d1fae5]",
+    cardBg: isDarkMode ? "bg-[#061810]/95 backdrop-blur-md" : "bg-white/95 backdrop-blur-md",
+    cardBorder: isDarkMode ? "border-emerald-900/60" : "border-emerald-200/60",
+    textColor: isDarkMode ? "text-emerald-100" : "text-[#064e3b]",
+    textColorMuted: isDarkMode ? "text-emerald-300/80" : "text-emerald-700/80",
     buttonStyle: "bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-500/15",
-    shadow: "shadow-[0_24px_60px_rgba(5,150,105,0.08)]",
+    shadow: isDarkMode ? "shadow-[0_24px_60px_rgba(0,0,0,0.6)]" : "shadow-[0_24px_60px_rgba(5,150,105,0.08)]",
   };
 
   const navigateTo = (view: ViewState) => {
@@ -1082,7 +1083,7 @@ export default function App() {
     const currentUserRole = signupRole === "cuidador" ? "Cuidador" : "Dono";
 
     return (
-      <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-800 animate-fade-in">
+      <div className={`min-h-screen bg-slate-50 flex flex-col font-sans text-slate-800 animate-fade-in ${isDarkMode ? "dark-emerald" : ""}`}>
         {/* CABEÇALHO */}
         <header className="sticky top-0 z-40 w-full bg-white border-b border-zinc-200 shadow-sm px-4 sm:px-6 h-16 flex items-center justify-between">
           
@@ -1248,12 +1249,14 @@ export default function App() {
                       <button
                         onClick={() => {
                           setIsProfileHudOpen(false);
-                          triggerToast("Tema e Acessibilidade configurados!");
+                          const nextMode = !isDarkMode;
+                          setIsDarkMode(nextMode);
+                          triggerToast(nextMode ? "Modo Escuro Esmeralda ativado! 🌙" : "Modo Claro ativado! ☀️");
                         }}
-                        className="flex items-center gap-3 px-4 py-2.5 text-left text-xs text-zinc-700 hover:bg-zinc-50 hover:text-zinc-950 transition-colors"
+                        className="flex items-center gap-3 px-4 py-2.5 text-left text-xs text-zinc-700 hover:bg-zinc-50 hover:text-zinc-950 transition-colors w-full"
                       >
                         <Moon className="w-4 h-4 text-zinc-500" />
-                        <span>Tela e Acessibilidade</span>
+                        <span>Tela e Acessibilidade ({isDarkMode ? "Claro" : "Escuro"})</span>
                       </button>
 
                       <div className="border-t border-zinc-100 my-1" />
@@ -2933,7 +2936,7 @@ export default function App() {
   }
 
   return (
-    <div className={`min-h-screen flex flex-col justify-between p-4 sm:p-12 bg-gradient-to-b ${theme.bgGradient} font-sans antialiased transition-all duration-700 relative overflow-hidden`}>
+    <div className={`min-h-screen flex flex-col justify-between p-4 sm:p-12 bg-gradient-to-b ${theme.bgGradient} font-sans antialiased transition-all duration-700 relative overflow-hidden ${isDarkMode ? "dark-emerald" : ""}`}>
       
       {/* Background visual effects for all initial screens (welcome, signup, login) */}
       {(currentView === "welcome" || currentView === "signup" || currentView === "login") && (
