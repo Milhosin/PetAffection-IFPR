@@ -236,3 +236,55 @@
 .dark-emerald .bg-white\/80 {
   background-color: rgba(6, 24, 16, 0.8) !important;
 }
+
+/* 100% Robust Attribute-based selectors to capture all Tailwind dark text colors in dark mode */
+.dark-emerald [class*="text-slate-9"],
+.dark-emerald [class*="text-slate-8"],
+.dark-emerald [class*="text-zinc-9"],
+.dark-emerald [class*="text-zinc-8"],
+.dark-emerald [class*="text-gray-9"],
+.dark-emerald [class*="text-gray-8"],
+.dark-emerald [class*="text-neutral-9"],
+.dark-emerald [class*="text-neutral-8"],
+.dark-emerald [class*="text-stone-9"],
+.dark-emerald [class*="text-stone-8"],
+.dark-emerald [class*="text-emerald-9"],
+.dark-emerald [class*="text-emerald-8"],
+.dark-emerald [class*="text-green-9"],
+.dark-emerald [class*="text-green-8"],
+.dark-emerald [class*="text-black"],
+.dark-emerald [class*="text-[#064e3b]"] {
+  color: #ffffff !important;
+}
+
+.dark-emerald [class*="text-zinc-7"],
+.dark-emerald [class*="text-zinc-6"],
+.dark-emerald [class*="text-slate-7"],
+.dark-emerald [class*="text-slate-6"],
+.dark-emerald [class*="text-gray-7"],
+.dark-emerald [class*="text-gray-6"],
+.dark-emerald [class*="text-neutral-7"],
+.dark-emerald [class*="text-neutral-6"],
+.dark-emerald [class*="text-emerald-7"] {
+  color: #a7f3d0 !important;
+}
+
+.dark-emerald [class*="text-zinc-5"],
+.dark-emerald [class*="text-slate-5"],
+.dark-emerald [class*="text-gray-5"],
+.dark-emerald [class*="text-neutral-5"] {
+  color: #34d399 !important;
+}
+
+/* Chat structure specific overrides for Dark Emerald mode */
+.dark-emerald .bg-\[\#f0f2f5\],
+.dark-emerald .bg-zinc-50\/50,
+.dark-emerald .bg-slate-50\/50 {
+  background-color: #030d08 !important;
+}
+
+.dark-emerald .bg-\[\#e5ddd5\]\/65 {
+  background-color: #05140c !important;
+  background-image: radial-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 0) !important;
+  background-size: 24px 24px !important;
+}
